@@ -113,3 +113,14 @@ pip install torch numpy pandas matplotlib astropy sunpy scikit-learn ipywidgets
 
 ## Tech stack
 PyTorch (mixed precision, multi-GPU) · a Mamba selective-scan implemented from scratch in PyTorch · Astropy / SunPy for FITS handling · NumPy · pandas · scikit-learn · Matplotlib
+
+---
+
+## 📈 Results
+
+| Metric | Final model (TCN-Mamba) |
+|---|---|
+| **True Skill Statistic (TSS)** | **0.9642** |
+| **F1 score** (flare classification) | **0.9254** |
+
+Measured on held-out test data, with flares classified as Quiet, C, M or X from a 60-minute input window and a 10-minute forecast horizon.
